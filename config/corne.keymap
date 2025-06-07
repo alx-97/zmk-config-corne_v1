@@ -156,10 +156,19 @@
         raise_layer {
             display-name = "up";
             bindings = <
-&kp LG(N1)  &kp EXCL      &kp AT        &kp HASH         &kp DLLR      &kp PRCNT       &rgb_ug RGB_ON  &rgb_ug RGB_OFF  &bl BL_INC  &bl BL_DEC  &bl BL_CYCLE  &bl BL_SET 70
-&kp LG(N2)  &kp CARET     &kp AMPS      &kp KP_ASTERISK  &kp LPAR      &kp RPAR        &kp LBKT        &kp RBKT         &kp MINUS   &kp EQUAL   &kp BSLH      &kp RG(N3)
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2     &bt BT_SEL 3  &bt BT_SEL 4    &kp LBKT        &kp RBKT         &kp LT      &kp GT      &kp PIPE      &none
-                                        &trans           &trans        &trans          &trans          &trans           &trans
+&kp LG(N1)  &kp EXCL      &kp AT        &kp HASH         &kp DLLR      &kp PRCNT       &rgb_ug RGB_TOG  &rgb_ug RGB_OFF  &bl BL_INC  &bl BL_DEC  &bl BL_CYCLE  &bl BL_SET 70
+&kp LG(N2)  &kp CARET     &kp AMPS      &kp KP_ASTERISK  &kp LPAR      &kp RPAR        &kp LBKT         &kp RBKT         &kp MINUS   &kp EQUAL   &kp BSLH      &kp RG(N3)
+&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2     &bt BT_SEL 3  &bt BT_SEL 4    &kp LBKT         &kp RBKT         &kp LT      &kp GT      &kp PIPE      &none
+                                        &trans           &trans        &trans          &trans           &lt 3 Z          &trans
+            >;
+        };
+
+        layer_3 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &bl BL_ON       &bl BL_OFF     &bl BL_TOG  &bl BL_INC  &bl BL_DEC  &bl BL_CYCLE
+&trans  &trans  &trans  &trans  &trans  &trans    &bl BL_SET 100  &bl BL_SET 50  &trans      &trans      &trans      &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans          &trans         &trans      &trans      &trans      &trans
+                        &trans  &trans  &trans    &trans          &trans         &trans
             >;
         };
     };
